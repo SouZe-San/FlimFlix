@@ -1,0 +1,1451 @@
+// =-============================ Font-styles Links =========================================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@100;300;400;500&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Open+Sans:wght@300&display=swap');
+
+@font-face {
+    font-family: "RoxaleStoryItalic";
+    src: url(/fonts/RoxaleStoryItalic-GOwLa.woff) format("woff");
+}
+
+@font-face {
+    font-family: "CentralDisplay";
+    src: url(/fonts/CentralDisplayDemoExpanded-w1ql3.woff) format("woff");
+}
+
+@font-face {
+    font-family: "ArtelyInksPersonal";
+    src: url(/fonts/ArtelyInksPersonalUse-vpWL.woff) format("woff");
+}
+
+@font-face {
+    font-family: "RomanceLogic";
+    src: url(/fonts/RomanceLogicDemo-Wy8BE.woff) format("woff");
+}
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Inter', sans-serif;
+//  font-family: 'Metal Mania', cursive;
+// font-family: 'Roboto', sans-serif;
+
+/* =================================== Defaults ============================================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #16151A;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+@mixin Flex_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin Flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    display: inline-block;
+}
+
+i {
+    cursor: pointer;
+}
+
+// selection div ka pura Css Hai Iha
+
+@mixin prefernce_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0vw 7vw;
+    width: 100%;
+    align-items: center;
+    height: 6vw;
+
+    .ranke_option {
+        display: flex;
+        font-size: 1rem;
+        color: rgb(174, 168, 168);
+        opacity: 0.6;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        i {
+            margin-right: 0.3rem;
+        }
+    }
+
+    .active-section {
+        font-size: 1.5rem;
+        color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+
+}
+
+// Genere button ka styling ha yha
+@mixin Genere {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3vw 5vw;
+
+    button.gener__btn {
+        width: 10vw;
+        height: 2.0vw;
+        border-radius: 20px;
+        background: #302f2f;
+
+        &:hover {
+            border-radius: 10px;
+            background: #3d3b3b;
+        }
+    }
+
+}
+
+.toggol_btn_color {
+    background: #28f8ea !important;
+    color: black !important;
+    border-radius: 10px;
+}
+
+// MOVIES cards for many recomandation
+@mixin Card__Sliide {
+    // @include Flex_row;
+    // justify-content: space-evenly;
+
+    .sllide-card {
+        width: 15%;
+
+        &:hover {
+            .card__img {
+                background: #0d0d0d5c;
+
+                img {
+                    position: relative;
+                    z-index: -1;
+                    height: 99.5%;
+                    width: 99.5%
+                }
+
+                i.card_paly-icon {
+                    visibility: visible;
+                    bottom: 4.5rem;
+                }
+            }
+
+        }
+
+        .card__img {
+            height: 21vw;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+            }
+
+            // &:hover {
+
+            //     background: #0d0d0d5c;
+            //     // display: flex;
+            //     // align-items: center;
+
+
+            //     img {
+            //         position: relative;
+            //         z-index: -1;
+            //         // height: 105%;
+            //         // width: 102%;
+            //         height: 99.5%;
+            //         width: 99.5%
+            //     }
+
+            //     i.card_paly-icon {
+            //         visibility: visible;
+            //         bottom: 4.5rem;
+            //     }
+            // }
+
+
+        }
+
+        .card__info {
+            @include Flex_column();
+            margin-top: 1.5vw;
+
+            .Movies__name {
+                font-size: 0.8rem;
+                display: inline;
+            }
+
+            div {
+                margin-top: 0.5vw;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    display: inline-block;
+                    font-size: 0.7rem;
+                    color: #827c7c;
+
+                    #like {
+                        color: #f91858;
+                    }
+
+                    #Rateing {
+                        color: gold;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+i.card_paly-icon {
+    visibility: hidden;
+    position: relative;
+    left: 10vw;
+    font-size: 3rem;
+    bottom: 0rem;
+    transition: all 0.4s;
+    color: #2addf0;
+
+}
+
+// ================================@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ TOP PART @@@@@@@@@@@@@@@@@@@======================================
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.3px solid #808080;
+    padding: 1rem 1rem 0 1rem;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+h1#logo {
+    // font-family: 'Inter', sans-serif;
+    font-family: 'Metal Mania', cursive;
+    font-weight: bolder;
+    // color: white;
+    margin-left: 4vw;
+    color: white;
+}
+
+span {
+    color: rgb(250, 0, 0);
+    font-weight: bold;
+}
+
+/*=================================@@@@@@@@@@@@@@@@@@ NAV BAR @@@@@@@@@@@@@@@@@@==================================*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    li {
+        margin: 0.5rem;
+        display: inline-block;
+        padding: 5px 2rem;
+        transition: transform 0.4s;
+
+    }
+
+    a {
+        text-decoration: none;
+        // font-weight: bold;
+        color: black;
+    }
+}
+
+// nav ul .nav__list {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+nav ul li:hover {
+    transform: scale(1.3);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+
+    a {
+        color: white;
+    }
+}
+
+.dropdown {
+    display: block;
+}
+
+#list_containt {
+    display: none;
+    position: absolute;
+    right: 23.5%;
+    background: linear-gradient(to top, #f0f0f0, rgba(255, 255, 255, 0));
+    box-shadow: 0px 8px 16px 0px #010101;
+    border-radius: 0.2rem;
+
+    a {
+        display: block;
+        padding: 0.3rem 0.4rem;
+
+        &:hover {
+            background: rgba(223, 220, 220, 0.903);
+            color: black;
+            // background: #1ef7ecd9;
+        }
+    }
+}
+
+.icons {
+    margin-right: 4vw;
+    display: inline;
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i {
+        margin: 0.5rem;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+#nav__close {
+    display: none;
+}
+
+#navOpen {
+    display: none;
+}
+
+#input {
+    // border-bottom: 2px solid black;
+    background-color: #58545691;
+    height: 2vw;
+    width: 14vw;
+    border-radius: 6px;
+    padding-top: 3px;
+    padding-left: 14px;
+
+    input {
+        width: 9vw;
+        outline: none;
+        background: transparent;
+        border: none;
+        color: white;
+    }
+}
+
+
+// ================================= HERO SECTION= ===============================
+
+header {
+    min-height: 45vw;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+    #black_screen {
+        background: rgba(0, 0, 0, 0.09) no-repeat;
+        background-size: cover;
+        min-height: 45vw;
+
+        .slide__arrow {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 23vw;
+            left: 0;
+            z-index: 9;
+
+            i {
+                display: inline-block;
+                font-size: 3rem;
+                cursor: pointer;
+                opacity: 0.8;
+                color: rgba(255, 255, 255, 0.604);
+                transition: all .3s ease-out;
+
+                &:hover {
+                    background: rgba(0, 0, 0, 0.901);
+                    color: white;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        .slide-changer {
+            display: inline-flex;
+            width: 30vw;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 4vw;
+            align-self: center;
+            left: 35%;
+
+
+            .s1 {
+                width: 4vw;
+                height: 0.3vw;
+                background: rgba(255, 255, 255, 0.533);
+                // background: white;
+                // cursor: pointer;
+                cursor: none;
+                border-radius: 9px;
+                opacity: 0.5;
+            }
+
+            .active__slide {
+                background-color: white;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.my_poster {
+    height: 47vw;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 2vw;
+    // align-items: center;
+    // justify-content: left;
+    padding: 13vw 10vw 10vw 10vw;
+
+    p,
+    h5,
+    h4 {
+        font-size: 1vw;
+        width: 50%;
+    }
+
+
+
+    h2 {
+        font-size: 4vw;
+        font-family: 'CentralDisplay';
+    }
+
+    .modules {
+        gap: 2vw;
+        display: flex;
+
+        button {
+            width: 10vw;
+            height: 3vw;
+            border-radius: 20px;
+            background: #302f2f;
+            color: white;
+            transition: all 0.4s;
+        }
+
+        button:hover {
+            background: #f91858;
+            font-size: 0.6rem;
+        }
+    }
+
+}
+
+// --------->for under shadow effect under the poster
+main {
+    box-shadow: 0px -4vw 2vw 4rem #16151AEB;
+}
+
+//  ===========================================2nd Section- TRANDES SECTION START ==============================
+
+.trends__section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    color: white;
+
+    .selection {
+        @include prefernce_type;
+
+    }
+
+    .genrs {
+        @include Genere;
+    }
+
+    .movie--option {
+        // margin-top: -4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .slide__arrow {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            // z-index: 9;
+            height: 26vw;
+            // top: 15vw;
+
+            #left {
+                background: linear-gradient(to right, #16151a, #16151a06);
+            }
+
+            #right {
+                background: linear-gradient(to left, #16151a, #16151a00);
+            }
+
+            i {
+                display: inline-block;
+                font-size: 3rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                opacity: 0.8;
+                color: #aaa;
+                position: relative;
+                z-index: 9;
+
+                // color: #aaa0a0;
+                &:hover {
+                    color: white;
+                    opacity: 1;
+                }
+
+            }
+
+        }
+
+        .movie__slides {
+            display: -webkit-box;
+            // @include Flex_row;
+            // justify-content: space-evenly;
+            overflow-x: scroll;
+            position: relative;
+            scrollbar-width: none;
+            padding: 0 1.3vw;
+
+            @include Card__Sliide();
+
+            .sllide-card {
+                margin: 0 0.5rem;
+            }
+
+        }
+    }
+
+}
+
+// ===========================================[ 3RED SECTION- movie/ SERIES/ OTHRERS ]=================================== 
+
+.display_none {
+    display: none;
+}
+
+.movie_sceries {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    color: white;
+
+    .selection {
+        @include prefernce_type;
+        padding: 1vw 7vw
+    }
+
+    .genrs {
+        @include Genere;
+        padding: 3vw 5vw 0 5vw;
+    }
+
+    .sort__section {
+        @include Flex_row();
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw 5vw;
+
+        .sort__selection {
+            form {
+                @include Flex_row;
+                justify-content: space-evenly;
+
+                button {
+                    width: 10vw;
+                    height: 2.0vw;
+                    border-radius: 20px;
+                    background: #2addf0;
+
+                    &:hover {
+                        background: #fb0047;
+                        color: white;
+                        border-radius: 10px;
+                    }
+
+                    // font-weight: bold;
+                    // font-family:'RomanceLogic' ;
+                }
+
+
+                p {
+                    display: inline-block;
+                }
+
+                .Sort_selection-items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 8vw;
+                    height: 2.0vw;
+                    border-radius: 20px;
+                    background: #4e4d4d;
+                    margin-left: 1vw;
+                    text-align: center;
+
+                    select {
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        width: 5vw;
+                        color: white;
+
+                        option {
+                            color: black;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .range_type {
+            @include Flex_column();
+            // justify-content: space-evenly;
+            align-items: center;
+
+            form {
+                @include Flex_row();
+                justify-content: space-evenly;
+                align-items: center;
+
+                i {
+                    font-size: 20px;
+                    position: relative;
+                    right: 4px;
+                    color: gold;
+                }
+
+                .slider {
+                    appearance: none;
+                    background: gold;
+                    height: 5px;
+                    border-radius: 10px;
+                    outline: none;
+                    transition: all 0.3s;
+                }
+
+                .slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: white;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+
+                }
+
+                .slider::-moz-range-thumb {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: white;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.3)
+                    }
+                }
+
+                p {
+                    padding: 0 5px;
+                }
+
+                span {
+                    color: white;
+                }
+            }
+
+            button {
+                width: 5vw;
+                padding: 2px 0;
+                border-radius: 5px;
+                background: #5e5a5a;
+                color: white;
+                align-self: end;
+                margin-top: 5px;
+                opacity: 0.7;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .Movie__recomanded {
+        @include Flex_column();
+
+        .card_row {
+            margin-top: 2vw;
+            @include Flex_row;
+            justify-content: space-evenly;
+            @include Card__Sliide; //-------> line no. 112
+        }
+    }
+}
+
+// ==================================================[ 4TH SECTION - PROMOTION ]===================================================
+
+
+.promotion {
+    width: 100%;
+    height: auto;
+    @include Flex_row;
+    color: white;
+    justify-content: space-evenly;
+    margin-top: 3vw;
+    padding: 3vw 0 3vw 3vw;
+    gap: 1vw;
+
+    .image__View {
+        width: 120%;
+        height: 29vw;
+
+        img {
+            height: 100%;
+            width: 100%;
+            transition: opacity ease-in-out 0.5s;
+        }
+
+        &:hover {
+            img {
+                // display: none;
+                opacity: 0;
+            }
+
+            background: url(/Assets/Animepic/4-1.jpg) no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+    .join__btn {
+        width: 9vw;
+        height: auto;
+        text-align: center;
+        background: #502960;
+        color: white;
+        padding: 0.6vw 0vw;
+        position: relative;
+        top: 6.4vw;
+        font-size: 0.7rem;
+        font-weight: 800;
+        border-radius: 5px;
+        transition: all ease-in 0.4s;
+
+        &:hover {
+            background: #159ef0;
+        }
+
+        p {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    .mem__info {
+        display: inline-flex;
+        flex-direction: column;
+        // padding-left: 3rem;
+        gap: 2vw;
+        padding: 0 2.3vw 0 3rem;
+
+        .description {
+            // font-family: 'Poppins', sans-serif;
+            color: #aaa;
+            font-family: 'ArtelyInksPersonal';
+            font-size: 1rem;
+
+        }
+
+        .row1 {
+            display: flex;
+            align-items: center;
+            margin-bottom: -1.8vw;
+
+            .line {
+                display: inline-block;
+                width: 4vh;
+                height: 2px;
+                background: #f91858;
+                margin-right: 5px;
+            }
+        }
+
+        .row2 {
+            h2 {
+                font-size: 2.0rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+
+        .row3 {
+            @include Flex_row;
+            gap: 10px;
+
+            .icon {
+                width: 8vw;
+                aspect-ratio: 1;
+                border: 2px dotted white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.8rem;
+                padding: 3px 0;
+                color: #00fff3;
+                transition: all ease-in 0.3s;
+
+                &:hover {
+                    border-color: #00fff3;
+                    background: #00fff3;
+                    color: black;
+                }
+            }
+
+            .box {
+                @include Flex_column;
+                gap: 6px;
+
+                p.hot_topic {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+}
+
+
+// ===================================================[ 5TH SECTION - EXTRA SHOWS ]=============================================
+
+.extra__shows {
+    width: 100%;
+    height: auto;
+    margin-top: 3vw;
+    color: white;
+
+    .movie__slides {
+        padding: 0 2vw;
+        display: -webkit-box;
+        overflow-x: scroll;
+        position: relative;
+        scrollbar-width: none;
+
+        @include Card__Sliide; //-------> line no. 112
+
+        .sllide-card {
+            margin: 0 0.5rem;
+            width: 16%;
+        }
+
+
+    }
+
+}
+
+// ==============================================[ 6th SECTION - TRIAL BOX ]==========================================================
+
+.trial__box {
+    width: 100%;
+    height: 20vw;
+    margin-top: 3vw;
+    color: white;
+    @include Flex_row;
+    // background: #00fff3;
+    // background: url(/Assets/extra_pic/d77e7f131902761.619e492c8ff89.jpg) no-repeat fixed ;
+    background: url(/Assets/extra_pic/60c9a3131902761.619e492c8f0dc.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+
+    .poster {
+        width: 100%;
+        height: 100%;
+        @include Flex_column();
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    .input__section {
+        width: 100%;
+        height: 100%;
+        @include Flex_row();
+        justify-content: center;
+
+        form {
+            width: 60%;
+
+            .input-box {
+                #Email_box {
+                    outline: none;
+                    border: none;
+                    // background: transparent;
+                    width: 100%;
+                    height: 2rem;
+                    border-radius: 5px;
+                    padding-left: 5px;
+                    box-shadow: -5px 4px 16px -5px #3119d5;
+                }
+            }
+        }
+
+        #email-btn {
+            width: 10vw;
+            height: 1.8rem;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            right: 20.3%;
+            background: #595654;
+            color: white;
+            transition: all 0.4s;
+
+            &:hover {
+                border: 2px solid;
+                color: black;
+                background: transparent;
+
+                // transform: scale(1.02);
+            }
+        }
+    }
+}
+
+// ===========================================[ 7th SECTION - TERMS & CONDITION ]====================================================
+
+.terms-con__section {
+    width: 100%;
+    height: 39vw;
+    // margin-top: 3vw;
+    color: white;
+    @include Flex_row;
+    // padding: 0 2.5vw;
+    // background: #523D3F;
+    // background: #342A33;
+
+    .img-part_leftpart {
+        // width: 29%;
+        width: 27%;
+        // height: 83%;
+        height: 74%;
+        z-index: 2;
+        position: relative;
+        bottom: -3rem;
+
+        img {
+            width: 159%;
+            height: 100%;
+
+        }
+    }
+
+    .img-part {
+        // width: 32%;
+        // height: 117%;
+        // z-index: 5;
+        // position: relative;
+        // right: 4vw;
+
+        width: 30%;
+        // height: 82%;
+        height: 100%;
+        // z-index: 5;
+        // position: absolute;
+        // right: 0;
+
+        img {
+            // width: 114%;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+            position: relative;
+            right: 2.4rem;
+            z-index: 1;
+
+        }
+    }
+
+    .condition {
+        @include Flex_column();
+        width: 50%;
+        height: 96%;
+        z-index: 1;
+
+        .line__container {
+            @include Flex_column();
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            padding-top: 2vw;
+
+
+            .bold-line {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 3vw;
+                padding: 1vw 0;
+
+            }
+
+            .support__line {
+                @include Flex_column();
+                gap: 1vw;
+                margin-bottom: 1vw;
+
+                // font-family: 'RomanceLogic'  
+                .condition_linn {
+                    span {
+                        color: rgb(255, 225, 0);
+                    }
+
+                    // font-family: 'Poppins',sans-serif;
+                    font-family: 'Open Sans',
+                    sans-serif;
+                    line-height: 1.8vw;
+                    color: #aaa;
+                }
+            }
+
+        }
+
+        .under__shadow {
+            width: 100%;
+            height: 5%;
+            box-shadow: 0 -1vw 26px 29px #16151A;
+        }
+
+    }
+
+}
+
+// =================================================[8th SECTION - ONES AGAIN]=======================================================
+
+.once__again {
+    height: 30vw;
+    width: 100%;
+    margin-top: 3vw;
+    color: white;
+    @include Flex_row();
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+    // transition: all 0.2s ease-out;
+
+
+    .down_nav {
+        ul {
+            list-style-type: none;
+            @include Flex_column();
+
+            li {
+                display: inline-block;
+                padding: 0.5rem 0;
+                cursor: pointer;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 0.9;
+                    transform: scale(1.03);
+                }
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+        }
+    }
+
+    .column {
+        @include Flex_column();
+        justify-content: center;
+        // align-items: center;
+        gap: 2vw;
+
+        .logo {
+            width: 5vw;
+            height: 7vw;
+
+            img {
+                width: 100%;
+                height: 80%;
+            }
+        }
+    }
+
+    .for_extra_hover {
+        @include Flex_column();
+        gap: 2vw;
+
+        // opacity: 0.5;
+        .name_of_comp {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                opacity: 0.9;
+                transform: scale(1.03);
+
+                i {
+                    background: white;
+                    color: #16151A;
+
+                }
+            }
+
+            i {
+                padding: 0.3vw;
+                border: 1px solid;
+                border-radius: 9px;
+
+            }
+        }
+    }
+
+    .site_info {
+
+        margin-top: 2vw;
+
+        .top_line {
+            margin-bottom: 0.5vw;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+    }
+
+    .c1 {
+        width: 11%;
+    }
+
+    .c2 {
+        width: 9%;
+    }
+
+    .c3 {
+        width: 22%;
+        font-size: 0.8rem
+    }
+
+}
+
+// =================================================[ LAST SECTION - FOOTRE] =======================================================
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4vw;
+    color: white;
+    background: #111016;
+    user-select: none;
+
+    .copy_right {
+        display: flex;
+    }
+}
+
+// ======================================================[ POP-UP SCROLL ]=======================================
+
+.scroll-up {
+    padding: 0.79rem;
+    background: #34323D;
+    position: fixed;
+    bottom: -5rem;
+    right: 2rem;
+    border-radius: 5px;
+    color: wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+
+    &:hover {
+        background: black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+.visible {
+    visibility: visible;
+    width: 0vw;
+    height: 0vw;
+}
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  TAB - DISPLAY !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media screen and (max-width:1000px) {
+    .icons {
+        width: 19vw;
+    }
+
+    #input {
+        width: 16vw;
+        height: 2.2vw;
+        padding-top: 0px;
+    }
+
+    nav ul li {
+        padding: 5px 1.5rem;
+    }
+}
+
+@media screen and (max-width:910px){
+    .promotion .mem__info .row3 .icon {
+        width: 10vw;}
+ // position of play circle in card-img
+        i.card_paly-icon {
+            left: 5rem;
+        }
+    // 1st free Traial Box
+        .trial__box .poster p {
+            font-size: 0.77rem;
+        }
+    
+        .trial__box .poster h2 {
+            font-size: 1.5rem;
+        }
+    
+        .name_of_comp {
+            font-size: 0.8rem;
+        }
+    
+        .once__again .c3 {
+            width: 24%;
+        }
+}
+
+@media screen and (max-width:970px){
+    .trial__box .poster h2 {
+        font-size: 1.5rem;
+      }
+}
+
+@media screen and (max-width:865px) {
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s;
+        width: 0rem;
+        height: 0rem;
+        border-bottom-left-radius: 31rem;
+        position: absolute;
+        // background: aqua;
+        right: 27px;
+        top: 20px;
+        padding-top: 3rem;
+        padding-left: 1rem;
+
+        li {
+            padding: 5px 4.3rem;
+        }
+
+        #list_containt {
+            top: 49%;
+            right: 15.5%;
+        }
+    }
+
+    .nav_open-btn {
+        z-index: 2;
+        // width: 5rem;
+        height: 2rem;
+        background: black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    #navOpen {
+        display: block !important;
+        transition: all .4s;
+    }
+
+    #list_containt {
+        top: 74% !important;
+        right: 13.5% !important;
+    }
+
+    .icons {
+        width: 42vw;
+
+        #notify_btn {
+            font-size: 1.4rem;
+        }
+    }
+
+    #input {
+        height: 3vw;
+        width: 31vw;
+        background-color: #323234c4;
+
+        input {
+            width: 83%;
+        }
+
+        &:hover {
+            border: solid 1px gray;
+        }
+    }
+
+}
+
+@media screen and (max-width:810px) {
+    .promotion .mem__info .row2 h2 {
+        font-size: 1.6rem;
+    }
+
+    .promotion .mem__info .row3 .icon {
+        width: 12vw;
+    }
+
+
+    .promotion .image__View {
+        width: 127%;
+        height: 33vw;
+    }
+
+    .trial__box .poster p {
+        font-size: 0.67rem;
+    }
+
+    .trial__box .poster h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    i.card_paly-icon {
+        font-size: 2.5rem;
+    }
+
+    .trends__section .movie--option .movie__slides .sllide-card:hover .card__img i.card_paly-icon {
+        bottom: 3.3rem;
+    }
+}
+
+@media screen and (max-width:664px) {
+    .icons {
+        width: 49vw;
+
+        #input {
+            width: 37vw;
+            padding-top: 0vw;
+
+            input {
+                width: 84%;
+            }
+        }
+    }
+
+    .terms-con__section .condition .line__container {
+        .bold-line {
+            font-size: 1.3rem;
+        }
+
+        .support__line {
+            gap: 2vw;
+
+            .condition_linn {
+                line-height: 2.8vw;
+            }
+        }
+    }
+}
+
+
+// @media screen and (min-width:1251px) {
+//     i.card_paly-icon{
+//         left: 8rem;
+//     }
+// }

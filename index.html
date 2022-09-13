@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/Assets/extra_pic/IMG_20220716_123553.jpg" type="image/x-icon">
+    <title>FlimFlix</title>
+</head>
+
+<body>
+    <header>
+        <div id="black_screen">
+
+            <!-- ////////////////////////////// NAVIGATION ====================================== -->
+            <div class="header" id="Top_nav_bar">
+                <div class="logo">
+                    <h1 id="logo"><span>F</span>lim<span>F</span>lix</h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <div class="nav__list" id="hiddenNav">
+                            <li><a href="#black_screen">Home</a></li>
+                            <li><a href="#2nd_section">Movies</a></li>
+                            <li><a href="#2nd_section">Series</a></li>
+                            <li><a id="dropdown-btn">My List<i class="ri-arrow-drop-down-line"></i> </a> </li>
+                            <div id="list_containt">
+                                <a href="http://">liked</a>
+                                <a href="http://">Watching</a>
+                                <a href="http://">On Hold</a>
+                                <a href="http://">Plan to Watched</a>
+                            </div>
+
+
+                            <div id="nav__close">
+                                <i class="ri-close-fill"></i>
+                            </div>
+                        </div>
+
+                        <div class="icons">
+                            <div id="input">
+                                <input type="text">
+                                <i class="ri-search-line"></i>
+                            </div>
+                            <i class="ri-notification-4-line" id="notify_btn"></i>
+                            <div class="nav_open-btn" >
+                                <i class="ri-function-line" id="navOpen"></i>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- ///////////////////////////////////////////////// BACKGROUND POSTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+            <!-- ---- 1st poster /moon KNIGHT-->
+            <div class="my_poster" onclick="currentSlide(1)"
+                style="background: url(/Assets/PicBox/moon-knight.jpg);   background-size: cover;">
+                <!-- ///////////////////////////////============ movie-poster - INFORMAITIO/ DETAILS ==============///////////////////////-->
+                <div class="main poster_details">
+                    <h5>Duration : 30m</h5>
+                    <h4>
+                        ⭐️ 8.2 Season<span> 1</span> ~ Episode<span> 7 </span>~ Sill Gptta Mean something
+                    </h4>
+                    <h2>THE MOON KNIGHT</h2>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio eaque molestias
+                        impedit
+                        dicta repellat blanditiis soluta autem corporis facere.
+                    </P>
+                    <div class="modules">
+                        <button><i class="ri-play-mini-fill"></i> WATCH</button>
+                        <button><i class="ri-add-fill"></i> ADD LIST</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd poster / YOUR NAME-->
+            <div class="my_poster" onclick="currentSlide(2)"
+                style="background: url(/Assets/Animepic/The\ Wallpaper\ anime.jpg);   background-size: cover;">
+                <!-- ///////////////////////////////============ movie-poster - INFORMAITIO/ DETAILS ==============///////////////////////-->
+                <div class="main poster_details">
+                    <h5>Duration : 1hrs 20mints</h5>
+                    <h4>
+                        ⭐️ 8.2 Season<span> 1</span> ~ Episode<span> 1 </span>~ Sill Gptta Mean something
+                    </h4>
+                    <h2>KIMI NO NA WA
+                        <br>
+                        <span style="font-size:2vw; color:white; display: inherit;">
+                            <span style="font-family:'Montserrat', sans-serif; color: white;">
+                                English Name </span> - YOUR NAME
+                        </span>
+                    </h2>
+
+
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio eaque molestias
+                        impedit
+                        dicta repellat blanditiis soluta autem corporis facere.
+                    </P>
+                    <div class="modules">
+                        <button><i class="ri-play-mini-fill"></i> WATCH</button>
+                        <button><i class="ri-add-fill"></i> ADD LIST</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd Poster /AVENGER-->
+            <div class="my_poster" onclick="currentSlide(3)"
+                style="background: url(/Assets/PicBox/AVENGERS.jpg);   background-size: cover;">
+                <!-- ///////////////////////////////============ movie-poster - INFORMAITIO/ DETAILS ==============///////////////////////-->
+                <div class="main poster_details">
+                    <h5>Duration : 1hrs 30mints</h5>
+                    <h4>
+                        ⭐️ 9.2 movie<span>4</span> ~ >~ Sill Gptta Mean something
+                    </h4>
+                    <h2>AVENGERS : INFINITY WAR</h2>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio eaque molestias
+                        impedit
+                        dicta repellat blanditiis soluta autem corporis facere.
+                    </P>
+                    <div class="modules">
+                        <button><i class="ri-play-mini-fill"></i> WATCH</button>
+                        <button><i class="ri-add-fill"></i> ADD LIST</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th poster /SAO-->
+            <div class="my_poster" onclick="currentSlide(4)"
+                style="background: url(/Assets/PicBox/Cool-SAO-Wallpaper-HD.jpg);   background-size: cover;">
+                <!--- ///////////////////////////////============ movie-poster - INFORMAITIO/ DETAILS ==============/////////////////////// -->
+                <div class="main poster_details">
+                    <h5>Duration : 24m</h5>
+                    <h4>
+                        ⭐️ 9.5 Season<span> 2</span> ~ Episode<span> 24 </span>~ Excitement With New Game World
+                    </h4>
+                    <h2>Sword Art Online II</h2>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio eaque molestias
+                        impedit
+                        dicta repellat blanditiis soluta autem corporis facere.
+                    </P>
+                    <div class="modules">
+                        <a href="/flim-info.html" style="text-decoration: none;"><button><i class="ri-play-mini-fill"></i> WATCH</button></a>
+                        <button><i class="ri-add-fill"></i> ADD LIST</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th Poster /THOR LOVE AND THANDER-->
+            <div class="my_poster" onclick="currentSlide(5)"
+                style="background: url(/Assets/PicBox/thor-love-and-thunder-feature.jpg);   background-size: cover;">
+                <!-- ///////////////////////////////============ movie-poster - INFORMAITIO/ DETAILS ==============///////////////////////-->
+                <div class="main poster_details">
+                    <h5>Duration : 1h 30m</h5>
+                    <h4>
+                        ⭐️ 8.2 Movie<span> 1 </span>~ Thirill with Sci-fi
+                    </h4>
+                    <h2>THOR LOVE AND THUNDER</h2>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio eaque molestias
+                        impedit
+                        dicta repellat blanditiis soluta autem corporis facere.
+                    </P>
+                    <div class="modules">
+                        <button><i class="ri-play-mini-fill"></i> WATCH</button>
+                        <button><i class="ri-add-fill"></i> ADD LIST</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 6Th Pster /DEMON SALYER-->
+            <div class="my_poster" onclick="currentSlide(6)"
+                style="background: url(/Assets/PicBox/Demon-Slayer-Background-HD.png);   background-size: cover;">
+                <!-- ///////////////////////////////============ movie-poster - INFORMAITIO/ DETAILS ==============///////////////////////-->
+                <div class="main poster_details">
+                    <h5>Duration : 23m</h5>
+                    <h4>
+                        ⭐️ 9.1 Season<span> 2</span> ~ Episode<span> 24 </span>~ Fighting With Darkness - Demon
+                    </h4>
+                    <h2> Kimetsu no Yaiba
+                        <br>
+                        <span style="font-size:2vw; color:white; display: inherit;">
+                            <span style="font-family:'Montserrat', sans-serif; color: white;">
+                                English Name </span>- Demon Slayer
+                        </span>
+                    </h2>
+                    <P>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio eaque molestias
+                        impedit
+                        dicta repellat blanditiis soluta autem corporis facere.
+                    </P>
+                    <div class="modules">
+                        <button><i class="ri-play-mini-fill"></i> WATCH</button>
+                        <button><i class="ri-add-fill"></i> ADD LIST</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide__arrow">
+                <i class="ri-arrow-left-s-line" onclick="forwardSlide(-1)"></i>
+                <i class="ri-arrow-right-s-line" onclick="forwardSlide(1)"></i>
+            </div>
+            <div class="slide-changer">
+                <div class="s1 "></div>
+                <div class="s1 "></div>
+                <div class="s1 "></div>
+                <div class="s1 "></div>
+                <div class="s1 "></div>
+                <div class="s1 "></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- ///////////////////////////////////=================   1ST SECTION ==============////////////////////////////////// -->
+        <div class="trends__section" id="1st_sction">
+            <div class="selection">
+                <h3 class="ranke_option option-btn" id="trands__btn"> <i class="ri-line-chart-fill"></i> Trends Now</h3>
+                <h3 class="ranke_option option-btn" id="popular__btn"> <i class="ri-fire-fill"></i> Popular</h3>
+                <h3 class="ranke_option option-btn" id="prime__btn"> <i class="ri-star-s-fill"></i> Premieres</h3>
+                <h3 class="ranke_option option-btn" id="TopRanks__btn"> <i class="ri-medal-fill"></i> Top-Rankers</h3>
+            </div>
+
+            <hr style="width:92%; align-self:center;">
+
+            <div class="genrs">
+                <button class="gener__btn">Action</button>
+                <button class="gener__btn">Adventures</button>
+                <button class="gener__btn">Animation</button>
+                <button class="gener__btn">Biography</button>
+                <button class="gener__btn">Crime</button>
+                <button class="gener__btn">Comedy</button>
+                <button class="gener__btn">Drama</button>
+                <button class="gener__btn">Dcumentry</button>
+            </div>
+
+            <div class="movie--option">
+                <div class="slide__arrow">
+                    <i class="ri-arrow-left-s-line" id="left"></i>
+                    <i class="ri-arrow-right-s-line" id="right"></i>
+                </div>
+                <!-- ================== TRENDS SECTION ================= -->
+                <div class="movie__slides option-section" id="trands">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Ghostbusters.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Ghostbusters</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/INCREDIBLE family birthday girl inspired outfit red black gold or any color; headpiece, skirt, shirt, tutu bow.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Jurassic World.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/PACIFIC RIM UPRISING -2018- Original 27x40 Advance _ B_ movie poster - Robots style - John Boyega, Scott Eastwood.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Ancient_Martial_Artist_In _The_City.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Ancient Martial Artist In The City</p>
+                            <div>
+                                <p>2022</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Tomb Raider A Origem.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Magiacian_From The _future.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Magiacian From The Future</p>
+                            <div>
+                                <p>2019</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial God Asura</p>
+                            <div>
+                                <p>2018</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 8.0</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://i.pinimg.com/originals/18/91/72/189172498d0cb5a51571496e6e991754.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Sword Art Online Progressive: Aria of a Starless Nighte</p>
+                            <div>
+                                <p>Up coming</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/The Boy In The All-Girls School.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> The Boy In The All-Girls School</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.2</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/IMG_20220712_202621.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Dark Star Emperor</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Handling The Demoness And Saintess</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan long</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- =================== POPULAR SECTION ================ -->
+                <div class="movie__slides option-section" id="popular">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://static.zerochan.net/Sword.Art.Online.Progressive%3A.Hoshi.Naki.Yoru.no.Aria.full.3379737.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Sword Art Online: Progressive</p>
+                            <div>
+                                <p>2022</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/The Angry Birds Movie (4K UHD).jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">The Angry Birds Movie </p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Jurassic World.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/IMG_20220712_202724.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Ancient_Martial_Artist_In _The_City.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Ancient Martial Artist In The City</p>
+                            <div>
+                                <p>2022</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Tomb Raider A Origem.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Magiacian_From The _future.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Magiacian From The Future</p>
+                            <div>
+                                <p>2019</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial God Asura</p>
+                            <div>
+                                <p>2018</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 8.0</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/My_Master_is_A_Deity.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">My Master Is A Deity.jpg</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/The Boy In The All-Girls School.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> The Boy In The All-Girls School</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.2</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/IMG_20220712_202621.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Dark Star Emperor</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Handling The Demoness And Saintess</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan long</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================= PRIME SECTOR ================== -->
+                <div class="movie__slides option-section" id="prime">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://i.pinimg.com/originals/18/91/72/189172498d0cb5a51571496e6e991754.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Sword Art Online Progressive: Aria of a Starless Nighte</p>
+                            <div>
+                                <p>Up Coming</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/“Venom_Tempo de Carnificina” ganha pôster de lançamento.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/Solo_leveling.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Solo A Star Wars Story (2018) - young Han - item by blackfilm.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Ancient_Martial_Artist_In _The_City.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Ancient Martial Artist In The City</p>
+                            <div>
+                                <p>2022</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Tomb Raider A Origem.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Magiacian_From The _future.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Magiacian From The Future</p>
+                            <div>
+                                <p>2019</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial God Asura</p>
+                            <div>
+                                <p>2018</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 8.0</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/IMG_20220712_202621.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Dark Star Emperor</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Handling The Demoness And Saintess</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/My_Master_is_A_Deity.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">My Master Is A Deity.jpg</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/The Boy In The All-Girls School.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> The Boy In The All-Girls School</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.2</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan long</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================= RAKING SECTOR ================== -->
+                <div class="movie__slides option-section" id="top-rank">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Ghostbusters.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Ghostbusters</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/ToG.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Jurassic World.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/The Angry Birds Movie (4K UHD).jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Ancient Martial Artist In The City</p>
+                            <div>
+                                <p>2022</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/TOMB RAIDER.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Magiacian_From The _future.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Magiacian From The Future</p>
+                            <div>
+                                <p>2019</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial God Asura</p>
+                            <div>
+                                <p>2018</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 8.0</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/My_Master_is_A_Deity.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">My Master Is A Deity.jpg</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/The Boy In The All-Girls School.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> The Boy In The All-Girls School</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.2</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/IMG_20220712_202621.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Dark Star Emperor</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Handling The Demoness And Saintess</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan long</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ///////////////////////////////////=================   2ND SECTION ==============////////////////////////////////// -->
+        <div class="movie_sceries" id="2nd_section">
+            <div class="selection">
+                <h3 class="ranke_option sector_btn" id="movie__btn"> <i class="ri-movie-2-fill"></i> Movies</h3>
+                <h3 class="ranke_option sector_btn" id="webseries__btn"><i class="ri-clapperboard-fill"></i> Web-series
+                </h3>
+                <h3 class="ranke_option sector_btn" id="anime__btn"> <i class="ri-input-method-fill"></i> Animation</h3>
+                <h3 class="ranke_option sector_btn" id="hoichoi__btn"> <i class="ri-mac-fill"></i> Hoichoi</h3>
+            </div>
+
+            <hr style="width:92%; align-self:center;">
+
+            <div class="genrs">
+                <button class="gener__btn">Action</button>
+                <button class="gener__btn">Adventures</button>
+                <button class="gener__btn">Animation</button>
+                <button class="gener__btn">Biography</button>
+                <button class="gener__btn">Crime</button>
+                <button class="gener__btn">Comedy</button>
+                <button class="gener__btn">Drama</button>
+                <button class="gener__btn">Dcumentry</button>
+            </div>
+
+            <div class="sort__section">
+                <div class="sort__selection">
+                    <form>
+                        <label for="#">
+                            Sort By : &nbsp;
+                        </label>
+                        <button> Latest </button>
+                        <div class="Sort_selection-items">
+                            <select name="year">
+                                <option>2022</option>
+                                <option>2021</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                            </select>
+                        </div>
+                        <div class="Sort_selection-items">
+                            <select name="sort_Type">
+                                <option>A-Z</option>
+                                <option>Reating</option>
+                                <option>Most Views</option>
+                                <option>Most Likes</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="range_type">
+                    <form action="" method="post">
+                        <i class="ri-star-s-fill" id="Rateing"></i> <input type="range" name="reating" class="slider"
+                            id="range__input" min="1.0" value="5.5" max="10.0">
+
+                        <p> <span id="range__output"></span></p>
+                    </form>
+                    <button>View All</button>
+                </div>
+
+            </div>
+
+            <!-- =================== MOVIES =================== -->
+            <div class="Movie__recomanded">
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/ToG.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tawer Of God</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/INCREDIBLE family birthday girl inspired outfit red black gold or any color; headpiece, skirt, shirt, tutu bow.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Jurassic World.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/93fa37548cd7f34dc9a8be74fc1d7caf.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Sakamate Chloe</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Watch Spider-Man No Way Home Online Stream HD Full Movies.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Spider-Man No Way Home</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/Solo_leveling.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Solo Leveling</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Ghostbusters.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Ghostbusters</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Handling The Demoness</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial_God_Asura</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/PACIFIC RIM UPRISING -2018- Original 27x40 Advance _ B_ movie poster - Robots style - John Boyega, Scott Eastwood.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan Long</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Tomb Raider A Origem.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =================== WEB-SECRIES =================== -->
+            <div class="Movie__recomanded">
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/ToG.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tawer Of God</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Jurassic World.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/INCREDIBLE family birthday girl inspired outfit red black gold or any color; headpiece, skirt, shirt, tutu bow.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/93fa37548cd7f34dc9a8be74fc1d7caf.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Sakamate Chloe</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/Solo_leveling.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Solo Leveling</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Watch Spider-Man No Way Home Online Stream HD Full Movies.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Spider-Man No Way Home</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Ghostbusters.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Ghostbusters</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Handling The Demoness </p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/TOMB RAIDER.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/PACIFIC RIM UPRISING -2018- Original 27x40 Advance _ B_ movie poster - Robots style - John Boyega, Scott Eastwood.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial_God_Asura</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan Long</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =================== ANIMATION=================== -->
+            <div class="Movie__recomanded">
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/ToG.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tawer Of God</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/INCREDIBLE family birthday girl inspired outfit red black gold or any color; headpiece, skirt, shirt, tutu bow.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://img1.ak.crunchyroll.com/i/spire4/727a407a607f1ddcc1789ed995beddd01658530970_full.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Classroom Of Elite</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/93fa37548cd7f34dc9a8be74fc1d7caf.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Sakamate Chloe</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/Solo_leveling.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Solo Leveling</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Martial God Asura</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/akame-ga-kill-dub.png" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Akame Ga Kill/p>
+                            <div>
+                                <p>2015</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Handling The Demoness</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 8.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Ancient_Martial_Artist_In _The_City.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Ancient Martial Artist</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/tate-no-yuusha-no-nariagari-2nd-season.png" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Tate No Yuudha 2nd Season</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Yuan_long.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Yuan Long</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/93fa37548cd7f34dc9a8be74fc1d7caf.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Hard-Carry Support</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- =================== HOICHOI =================== -->
+            <div class="Movie__recomanded">
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://static.zerochan.net/Sword.Art.Online.Progressive%3A.Hoshi.Naki.Yoru.no.Aria.full.3379737.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Ghostbusters</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 2 - 1.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Handling The Demoness And Saintess</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Manhua-Pic/Martial_God_Asura.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Martial_God_Asura</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/PACIFIC RIM UPRISING -2018- Original 27x40 Advance _ B_ movie poster - Robots style - John Boyega, Scott Eastwood.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Pacific Rim Uprising</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://i.pinimg.com/originals/18/91/72/189172498d0cb5a51571496e6e991754.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Sword Art Online Progressive: Aria of a Starless Nighte</p>
+                            <div>
+                                <p>2021</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 10</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Tomb Raider A Origem.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tomb Raider</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card_row">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/ToG.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Tawer Of God</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/INCREDIBLE family birthday girl inspired outfit red black gold or any color; headpiece, skirt, shirt, tutu bow.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Incridibile</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill"></i>
+                                    <i class="ri-eye-fill"></i>
+
+                                    <i class="ri-star-s-fill"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/PicBox/Jurassic World.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Jurassic World</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/93fa37548cd7f34dc9a8be74fc1d7caf.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Hard-Carry Support</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/P2.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Sakamate Chloe</p>
+                            <div>
+                                <p>2015</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="/Assets/Animepic/Solo_leveling.jpg" alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Solo Leveling</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\================ 4th SECTION ==================////////////////////////////////// -->
+        <div class="promotion">
+            <div class="image__View">
+                <img src="/Assets/Animepic/gEyEBCvQrpcr5nE42DeM62LCiPXXrH.png" alt="Join view">
+                <!-- <img src="/Assets/Animepic/[XTER] My Mother [English] [XNumbers] - Chapter - 100.jpg" alt="Join view"> -->
+            </div>
+
+            <div class="join__btn">
+                <a href="/CrateAccount.html" target="_blank" style="text-decoration:none ; color: white; "><p>MEMBERSHIP <i class="ri-download-fill"></i></p></a>
+            </div>
+
+            <div class="mem__info">
+                <div class="row1">
+                    <div class="line"></div>
+                    <p>OUR SERVICES at Only $ 4.99</p>
+                </div>
+                <div class="row2">
+                    <h2>Download your Shows <br> Enjoy OFFLINE.</h2>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe dolorum,
+                        ipsum praesentium doloremque fugit dolores tempore cupiditate voluptatum perferendis!
+                        Laboriosam veniam expedita doloremque porro quaerat corporis nemo laborum eum?
+                    </p>
+                </div>
+                <div class="row3">
+                    <div class="icon"><i class="ri-tv-2-fill"></i></div>
+                    <div class="box">
+                        <p class="hot_topic"> Enjoy on your TV.</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            doloremque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, incidunt.
+                        </p>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="icon"><i class="ri-movie-fill"></i></div>
+                    <div class="box">
+                        <p class="hot_topic"> Watch Everywhere.</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                            doloremque?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sint!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ////////////////////////////////////================ 5th SECTION ====================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <div class="extra__shows">
+
+            <div class="movie__slides">
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Animepic/p1.jpg" alt="Movie-Image">
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name">Demon Sword master of Exceliber Academy</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="https://ogre.natalie.mu/media/news/comic/2019/0721/main-7ltn.jpg?imwidth=750&imdensity=1" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name">Sword Art Online-Alicizaton</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-eye-fill"></i>
+
+                                <i class="ri-star-s-fill"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="https://img1.ak.crunchyroll.com/i/spire4/727a407a607f1ddcc1789ed995beddd01658530970_full.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name"> Classroom Of Elite 2</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Animepic/p5.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name"> Super HOT_Model</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Animepic/Solo_leveling.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name">Solo Leveling</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="https://i.pinimg.com/originals/18/91/72/189172498d0cb5a51571496e6e991754.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name"> SAO - Movie</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Manhua-Pic/IMG_20220712_202724.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name">dark Star Emparor</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Manhua-Pic/IMG_20220712_202746.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name">Dark Star Emperor</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill"></i>
+                                <i class="ri-eye-fill"></i>
+
+                                <i class="ri-star-s-fill"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Manhua-Pic/Handling The Demoness And Saintess - Handling The Demoness And Saintess Chapter 37 - 1.jpg"
+                            alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name">Handling The Demoness And Saintess</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Animepic/Handling The Demoness And Saintess - Chapter 56 - 1.jpg"
+                            alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name"> Super HOT_Model</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="https://static.zerochan.net/Sword.Art.Online.Progressive%3A.Hoshi.Naki.Yoru.no.Aria.full.3379737.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name"> SAO- Progressive</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sllide-card">
+                    <div class="card__img">
+                        <img src="/Assets/Animepic/9106702c66d8912b519576feee651fab.jpg" alt="Movie-Image">
+                        <i class="ri-play-circle-fill card_paly-icon"></i>
+                    </div>
+                    <div class="card__info">
+                        <p class="Movies__name"> Genshim Impact [Ei]</p>
+                        <div>
+                            <p>2010</p>
+                            <p>
+                                <i class="ri-heart-fill" id="like"></i>
+                                <i class="ri-eye-fill" id="Watch"></i>
+                                <i class="ri-star-s-fill" id="Rateing"> 7.5</i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ///////////////////////////////====================== 6TH SECTION =======================//////////////////////////////////////// -->
+        <div class="trial__box">
+            <div class="poster">
+                <h2>
+                    FIRST FREE TRIAL FOR 30 DAYES.
+                </h2>
+                <P>
+                    Enter your email for enjoy free trial and further membership.
+                </P>
+            </div>
+            <div class="input__section">
+                <form action="#" method="post">
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Enter Your Email-ID" id="Email_box">
+                    </div>
+                </form>
+                <button id="email-btn">LET'S START</button>
+            </div>
+        </div>
+
+        <!-- ////////////////////////////====================== 7th SECTION ========================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <div class="terms-con__section">
+            <div class="img-part_leftpart section">
+                <img src="/Assets/Animepic/2nd-bgremove.png" alt="welcom" class="imgleft">
+            </div>
+            <div class="condition">
+                <div class="line__container">
+                    <h3 class="bold-line">
+                        terms And condition.
+                    </h3>
+                    <div class="support__line">
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Illum, saepe.
+                        </p>
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nesciunt quo non laborum consequuntur quibusdam vero officia omnis,
+                            molestias sit laudantium?
+
+                        </p>
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Illum porro nisi sapiente voluptatem inventore fuga dolor ad modi natus
+                            laboriosam culpa, mollitia perferendis sed incidunt suscipit, esse, quam aliquam non.
+                        </p>
+
+                    </div>
+                    <h3 class="bold-line">
+                        I want to new movies & anime online in 720, 1080p ,HD and 4k Quality.
+                    </h3>
+                    <div class="support__line">
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio! Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Sint, nostrum.
+
+                        </p>
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio!
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ut?.</span><br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi libero magnam aliquam
+                            perferendis, laborum quibusdam! Molestias debitis nihil pariatur adipisci.
+                        </p>
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sequi repellendus optio
+                            ipsam, corrupti veritatis fugiat eum facere perferendis placeat!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio!
+                        </p>
+                    </div>
+                    <h3 class="bold-line">
+                        join our coummunity or Discord for help and get more Benifits.
+                    </h3>
+                    <div class="support__line">
+                        <p class="condition_linn">
+                            Lorem ipsum dolo Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sequi quia
+                            possimus maiores deserunt quas esse tenetur eligendi eum quisquam? r sit amet consectetur
+                            adipisicing elit. Minus, ex! Eius, dignissimos animi fugiat consequatur odio velit quia hic
+                            optio!
+                        </p>
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio! Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Sequi modi eligendi autem impedit numquam facilis sint consequuntur magnam
+                            corrupti repellat.
+                        </p>
+                        <p class="condition_linn">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ex! Eius, dignissimos animi
+                            fugiat consequatur odio velit quia hic optio! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Natus quas autem voluptatum aperiam quibusdam provident id libero quo,
+                            voluptas sapiente nulla architecto reprehenderit at sit consequuntur nesciunt sint corporis
+                            explicabo!
+                        </p>
+                        <br><br><br>
+                    </div>
+                </div>
+                <div class="under__shadow"></div>
+            </div>
+            <div class="img-part">
+                <img src="/Assets/Animepic/20220508_140630-removebg-preview.png" alt="welcom" class="imgright">
+            </div>
+        </div>
+
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\===================== 8TH SECTION -===========================///////////////////////////////////////-->
+        <div class="once__again section">
+            <div class="column">
+                <div class="logo">
+                    <!-- <img src="/Assets/extra_pic/IMG_20220712_202621.jpg" alt="logo"> -->
+                    <img src="/Assets/extra_pic/IMG_20220716_123553.jpg" alt="logo">
+                    <p class="logo_name">FlimFlix.tv</p>
+                </div>
+                <div class="down_nav">
+                    <ul>
+                        <li><a href="#black_screen">HOME</a></li>
+                        <li><a href="#1st_sction">TRENDS</a></li>
+                        <li><a href="#2nd_section">MOVIES</a></li>
+                        <li><a href="">MY LIST</a></li>
+                        <li><a href="/CrateAccount.html" target="_blank">JOIN US</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="column site_info c1">
+                <p class="top_line">Resourse</p>
+                <div class="for_extra_hover">
+                    <p class="name_of_comp">IDMb</p>
+                    <p class="name_of_comp">Premium Benifits</p>
+                    <p class="name_of_comp">Advertising</p>
+                    <p class="name_of_comp">Terms of Use</p>
+                    <p class="name_of_comp">Privacy</p>
+                </div>
+            </div>
+            <div class="column site_info c2">
+                <p class="top_line">Patners</p>
+                <div class="for_extra_hover">
+                    <p class="name_of_comp">Disney</p>
+                    <p class="name_of_comp">marvel</p>
+                    <p class="name_of_comp">Chuynururl</p>
+                    <p class="name_of_comp">hungamam</p>
+                    <p class="name_of_comp">fananimation</p>
+                </div>
+            </div>
+            <div class="column site_info c3">
+                <p class="top_line">Contacts</p>
+                <div class="for_extra_hover">
+                    <p class="name_of_comp"> <i class="ri-chat-3-fill"></i> Community</p>
+                    <p class="name_of_comp"><i class="ri-discord-fill"></i> https://Discord.gg/FvzUYnw</p>
+                    <p class="name_of_comp"><i class="ri-facebook-fill"></i> https://m.facebook.com/flimfix</p>
+                    <p class="name_of_comp"><i class="ri-instagram-fill"></i> https://m.instagram.com/flimfix</p>
+                    <p class="name_of_comp"><i class="ri-twitter-fill"></i> @FlimFlix</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ///////////////////////////////////===================== FOOTER -=========///////////\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <footer>
+        <div class="copy_right">
+            <i class="ri-copyright-line"></i>
+            <p>2022<a href="https://soze03.carrd.co/"><span style="color: rgb(0, 242, 255);"> CodeSouZe-San.</span></a> All Right Reserved</p>
+        </div>
+    </footer>
+
+    <!--///////////////////////////////================ POP-UP SCROLL BOX ================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <a href="#" class="scroll-up" id="scroll-pop">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    
+    <script src="/JavaScript/scrollreveal.min.js"></script>
+    <script src="/JavaScript/main.js" defer></script>
+</body>
+
+</html>

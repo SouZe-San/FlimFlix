@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="/stylesheet/style.css"> -->
+    <link rel="stylesheet" href="/stylesheet/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/Assets/extra_pic/IMG_20220716_123553.jpg" type="image/x-icon">
+    <title>FlimFlix</title>
+</head>
+
+<body>
+<!-- ============================ VIDEO-PLAYER ============================ -->
+    <div class="videoPlayer" id="videobg">
+        <i class="ri-close-circle-fill" id="video_close_btn"></i>
+        <video id="videoInterface" autoplay controls>
+            <source id="mp4_src" src="/Assets/VIdeo//Anime_Mix「AMV」~_Whatever_It_Takes(720p).mp4"
+                type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <!-- ////////////////////////////// NAVIGATION ====================================== -->
+        <div class="header" id="Top_nav_bar">
+            <div class="logo">
+                <h1 id="logo"><span>F</span>lim<span>F</span>lix</h1>
+                <div class="verticle_line"></div>
+                <a href="/index.html" rel="noopener noreferrer" style="text-decoration:none ;"><div class="back white point"><i class="ri-arrow-left-s-line"></i> Back</div></a>
+                <div class="verticle_line"></div>
+                <div class="navButton white" id="navbtn"><i class="ri-function-fill" ></i></div>
+            </div>
+
+            <nav>
+                <div class="input">
+                    <div class="text"> <input type="text" name="" placeholder="Search Movie"></div>
+                    <div class="icon"> <i class="ri-search-line"></i></div>
+                </div>
+
+                <div class="butoon-noti">
+                    <i class="ri-notification-4-line" id="notify_btn"></i>
+                    <button> <i class="ri-account-pin-box-fill"></i> Account</button>
+                </div>
+            </nav>
+        </div>
+
+        <!--/////////////////============== HIDDEN - NAVIGATION ===============\\\\\\\\\\\\\\\\\\\\\\\\  -->    
+        <div id="hidden-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#1st_sction">Tranding</a></li>
+                <li><a href="">My List</a></li>
+                <li><a href="/CrateAccount.html" target="_blank">Join Us</a></li>
+            </ul>
+        </div>
+
+        <!-- ///////////////// ====== only background and  play button ========\\\\\\\\\\\\\\\\\-->
+        <div class="play_icon"> <i class="ri-play-fill"></i> </div>
+    </header>
+
+    <main>
+        <div class="float-container">
+
+            <!-- HEAD LINE -->
+            <div class="box1_1">
+                <!-- HEADLINE -->
+                <div class="name">Sword Art Online II</div>
+                <div class="leftside">
+                    <div class="b1 point">IMDb 9.5</div>
+                    <div class="b1 point"> <i class="ri-heart-fill"></i>Watch Later</div>
+                    <div class="b1 point">shear</div>
+                </div>
+            </div>
+            <hr>
+            <!-- DEATAILD AND TRAILER -->
+            <div class="box1_2">
+                <!-- ----------------Left Collumn -->
+                <div class="leftcol">
+                    <div class="row1img">
+                        <!-- For Image -->
+                        <img src="https://i.pinimg.com/564x/ee/8f/2e/ee8f2e2efb38a4a800e22ab35fc22f83.jpg" alt="ConatianImage">
+                        <!-- <img src="/Assets/extra_pic/20220820_072845.jpg" alt="ConatianImage"> -->
+                    </div>
+                    <div class="row1but">
+                        <div class="but point"> <i class="ri-heart-fill" style="color: red;"></i>&nbsp;Watch Later</div>
+                        <div class="but point"> <i class="ri-add-fill"></i>&nbsp;Add to list</div>
+                        <div class="but point"><i class="ri-emphasis-cn"></i>&nbsp;Translet</div>
+                    </div>
+                    <div class="row1 comment point">
+                        <i class="ri-discuss-fill"></i> &nbsp; Show Comments
+                    </div>
+                </div>
+                <!-- --------------right Column -->
+                <div class="rightcol">
+                    <div class="row2_1">
+                        <!-- left part -->
+                        <div class="col2_1">
+                            <!-- Name -->
+                            <div class="box1">
+
+                                <h3>Sword art Online II <p>IMDb 9.5</p>
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <hr>
+                            <!-- Reatins -->
+                            <div class="box2">
+                                <div class="div">
+                                    <p><i class="ri-eye-2-line"></i> 1,809,140</p>
+                                    <p class="star">
+                                        <i class="ri-star-fill"></i><i class="ri-star-half-fill"></i><i
+                                            class="ri-star-half-s-fill"></i> <i class="ri-star-line"></i>
+                                    </p>
+                                    <p class="gener">
+                                        PG-17 <span>|</span> 1h 10min <span>|</span>Action/Game/Romace<span>|</span>
+                                        2017
+                                    </p>
+                                </div>
+                                <div>OSCARS</div>
+                            </div>
+                            <hr>
+                            <!-- For Details -->
+                            <div class="box3">
+
+                                <div class="rowboc detail">
+                                    <div class="head">
+                                        <h3>Details</h3>
+                                    </div>
+                                    <div class="underinfo">
+                                        <p class="info"><span>Director :</span> Soumya</p>
+                                        <p class="info"><span>Writer :</span>Souzesan</p>
+                                        <p class="info"><span>Country: </span>Japenees</p>
+                                        <p class="info"><span>Language: </span>Japenees</p>
+                                        <p class="info"><span>Season:</span>4season, 2 movie</p>
+                                        <p class="info"><span>Release Date:</span>25 december,2020(Japan)</p>
+                                        <p class="info"><span>Other Name :</span>SAO see more >>></p>
+                                    </div>
+
+                                </div>
+                                <div class="rowboc cast">
+                                    <div class="head">
+                                        <h3>Cast</h3>
+                                    </div>
+                                    <div class="underinfo">
+                                        <div class="people">
+                                            <div class="profile"><img
+                                                    src="https://cdn.myanimelist.net/images/characters/2/259523.jpg"
+                                                    alt=""></div>Kirigaya kazuto
+                                        </div>
+                                        <div class="people">
+                                            <div class="profile"><img
+                                                    src="https://cdn.myanimelist.net/images/characters/15/262053.jpg"
+                                                    alt=""></div> Yuuki Asuna
+                                        </div>
+                                        <div class="people">
+                                            <div class="profile"><img
+                                                    src="https://cdn.myanimelist.net/images/characters/4/256167.jpg"
+                                                    alt=""></div>Asada Shino
+                                        </div>
+                                        <div class="people">
+                                            <div class="profile"><img
+                                                    src="https://cdn.myanimelist.net/images/voiceactors/2/68581.jpg"
+                                                    alt=""></div>kabaya Akihiko
+                                        </div>
+                                        <div><i class="ri-add-circle-line"></i> Show More</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2_2">
+                            <h2>Gallary</h2>
+
+                            <!-- For Tarailerbox -->
+                            <div class="trailr" onmouseover="playVid()" onmouseout="pauseVid()">
+                                <!-- muted ==== try this also-->
+                                <video id="myVideo" autoplay muted>
+                                    <source id="mp4_src" src="/Assets/VIdeo/Anime_Sword_Fights_-_Madcon__Beggin_(480p).mp4"
+                                        type="video/mp4">
+                                </video>
+                                <i class="ri-play-mini-fill"></i> <img id="switch"
+                                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f702b429-79be-4907-8a8e-1ba8613ebe00/d92hf0x-17be56a4-39c3-4760-a583-841dd9f5d516.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y3MDJiNDI5LTc5YmUtNDkwNy04YThlLTFiYTg2MTNlYmUwMFwvZDkyaGYweC0xN2JlNTZhNC0zOWMzLTQ3NjAtYTU4My04NDFkZDlmNWQ1MTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.9HzEomJRkCcxv7XLPh78W1otMyxJE5oK0k138vEZk38"
+                                    alt="Trailer">
+                             <!-- JS FOR TRAILER -->
+                            <script>
+                                const videobox = document.getElementById("myVideo");
+                                function playVid() {
+                                    videobox.play();
+                                }
+                                function pauseVid() {
+                                    videobox.pause();
+                                } 
+                            </script>
+                                </div>
+                           
+                            <div class="cutimg">
+                                <div class="cut img1"><img src="/Assets/extra_pic/sinno.png" alt="SI">
+                                </div>
+                                <div class="cut img2"><img src="/Assets/extra_pic/KissIn_SAO.png" alt="si"></div>
+                                <div class="cut img3">
+                                    <i class="ri-play-list-2-fill"></i>
+                                </div>
+                            </div>
+                            <div class="soundtrack point">
+                                <i class="ri-headphone-fill"></i> &nbsp; <p> soundTrack</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- StoryLine -->
+                    <div class="row2_2 section">
+                        <h3>Storyline<div class="line">
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim assumenda inventore,
+                            laborum quaerat distinctio commodi molestias iste culpa reprehenderit corrupti minima? Modi
+                            blanditiis nobis quis minima eveniet suscipit obcaecati!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius veniam adipisci molestiae
+                            temporibus repellat dolorem similique, esse reiciendis quo minima aut eum consequuntur
+                            beatae, asperiores iure quod necessitatibus. A, consectetur!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam atque cupiditate iste
+                            quibusdam iure accusamus? Esse hic iure eius consequatur magnam est, laudantium doloribus
+                            quis cum rerum maxime, modi veritatis?</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- EPISODE -->
+            <div class="box1_3">
+                <h2>Episods <div class="line"></div>
+                </h2>
+                <div class="ep_contain">
+                    <div class="ep_items"> Ep-1 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-2 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-3 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-4 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-5 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-6 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-7 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-9 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-10 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-11 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-12 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-13 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-14 <div class="verticle_line"></div> ENG
+                    </div>
+                    <div class="ep_items"> Ep-15 <div class="verticle_line"></div> ENG
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- SIMILAR CONTAINT -->
+            <div class="box1_4 reveal">
+                <div class="left_heading">
+                    <i class="ri-firefox-fill"></i>
+                    <p>Similer Shows</p>
+                </div>
+                <div class="rightbox">
+                    Filter by Popularity &nbsp;|&nbsp;<i class="ri-arrow-drop-down-fill"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="box1_5 section">
+                <div class="items-card">
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://ogre.natalie.mu/media/news/comic/2019/0721/main-7ltn.jpg?imwidth=750&imdensity=1"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Sword Art online Alicization</p>
+                            <div>
+                                <p>2020</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.0</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://ogre.natalie.mu/media/news/comic/2019/0721/sub6-62iv.jpg?imwidth=750&imdensity=1"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name"> Sword Art Online-I</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://img1.ak.crunchyroll.com/i/spire4/727a407a607f1ddcc1789ed995beddd01658530970_full.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Classroom Of Elite</p>
+                            <div>
+                                <p>2010</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9.5</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://i.pinimg.com/originals/18/91/72/189172498d0cb5a51571496e6e991754.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Sword Art Online Progressive: Aria of a Starless Nighte</p>
+                            <div>
+                                <p>Up coming</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 9</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sllide-card">
+                        <div class="card__img">
+                            <img src="https://static.zerochan.net/Sword.Art.Online.Progressive%3A.Hoshi.Naki.Yoru.no.Aria.full.3379737.jpg"
+                                alt="Movie-Image">
+                            <i class="ri-play-circle-fill card_paly-icon"></i>
+                        </div>
+                        <div class="card__info">
+                            <p class="Movies__name">Sword Art Online: Progressive</p>
+                            <div>
+                                <p>2022</p>
+                                <p>
+                                    <i class="ri-heart-fill" id="like"></i>
+                                    <i class="ri-eye-fill" id="Watch"></i>
+                                    <i class="ri-star-s-fill" id="Rateing"> 8.8</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showMore point">
+                    <div><i class="ri-add-circle-line"></i>
+                        <p>Show More</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <hr>
+    <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\===================== LAST SECTION -===========================///////////////////////////////////////-->
+    <div class="once__again ">
+        <div class="column c0">
+            <div class="logo">
+
+                <img src="/Assets/extra_pic/IMG_20220716_123553.jpg" alt="logo">
+                <p class="logo_name">FlimFlix.tv</p>
+            </div>
+            <div class="down_nav">
+                <ul>
+                    <li><a href="#black_screen">HOME</a></li>
+                    <li><a href="#1st_sction">TRENDS</a></li>
+                    <li><a href="#2nd_section">MOVIES</a></li>
+                    <li><a href="">MY LIST</a></li>
+                    <li><a href="/CrateAccount.html" target="_blank">JOIN US</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="column site_info c1">
+            <p class="top_line">Resourse</p>
+            <div class="for_extra_hover">
+                <p class="name_of_comp">IDMb</p>
+                <p class="name_of_comp">Premium Benifits</p>
+                <p class="name_of_comp">Advertising</p>
+                <p class="name_of_comp">Terms of Use</p>
+                <p class="name_of_comp">Privacy</p>
+            </div>
+        </div>
+        <div class="column site_info c2">
+            <p class="top_line">Patners</p>
+            <div class="for_extra_hover">
+                <p class="name_of_comp">Disney</p>
+                <p class="name_of_comp">marvel</p>
+                <p class="name_of_comp">Chuynururl</p>
+                <p class="name_of_comp">hungamam</p>
+                <p class="name_of_comp">fananimation</p>
+            </div>
+        </div>
+        <div class="column site_info c3">
+            <p class="top_line">Contacts</p>
+            <div class="for_extra_hover">
+                <p class="name_of_comp"> <i class="ri-chat-3-fill"></i> Community</p>
+                <p class="name_of_comp"><i class="ri-discord-fill"></i> https://Discord.gg/FvzUYnw</p>
+                <p class="name_of_comp"><i class="ri-facebook-fill"></i> https://m.facebook.com/flimfix</p>
+                <p class="name_of_comp"><i class="ri-instagram-fill"></i> https://m.instagram.com/flimfix</p>
+                <p class="name_of_comp"><i class="ri-twitter-fill"></i> @FlimFlix</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////////////===================== FOOTER -=========///////////\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <footer>
+        <div class="copy_right">
+            <i class="ri-copyright-line"></i>
+            <p>2022 <a href="https://soze03.carrd.co/"><span style="color: rgb(0, 242, 255);"> CodeSouZe-San.</span></a> All Right Reserved</p>
+        </div>
+    </footer>
+
+    <!--///////////////////////////////================ POP-UP SCROLL BOX ================\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <a href="#" class="scroll-up" id="scroll-pop">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <script src="/JavaScript/scrollreveal.min.js"></script>
+    <!-- <script src="/JavaScript/main.js" defer></script> -->
+    <script src="/JavaScript/main_2.js" defer></script>
+    
+</body>

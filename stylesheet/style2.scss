@@ -1,0 +1,1140 @@
+// =-============================ Font-styles Links =========================================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@100;300;400;500&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+@font-face {
+    font-family: "RoxaleStoryItalic";
+    src: url(/fonts/RoxaleStoryItalic-GOwLa.woff) format("woff");
+}
+
+@font-face {
+    font-family: "CentralDisplay";
+    src: url(/fonts/CentralDisplayDemoExpanded-w1ql3.woff) format("woff");
+}
+
+@font-face {
+    font-family: "ArtelyInksPersonal";
+    src: url(/fonts/ArtelyInksPersonalUse-vpWL.woff) format("woff");
+}
+
+@font-face {
+    font-family: "RomanceLogic";
+    src: url(/fonts/RomanceLogicDemo-Wy8BE.woff) format("woff");
+}
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Inter', sans-serif;
+//  font-family: 'Metal Mania', cursive;
+// font-family: 'Roboto', sans-serif;
+/* =================================== Defaults ============================================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #16151A;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+@mixin Flex_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin Flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    display: inline-block;
+}
+
+i {
+    cursor: pointer;
+
+}
+
+.white {
+    color: white;
+}
+
+.point {
+    cursor: pointer;
+}
+
+// / ================================@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ LEFT PART OF HEADER @@@@@@@@@@@@@@@@@@@======================================
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.3px solid #808080;
+    padding: 0.1rem 1rem 0.18rem 1rem;
+    // position: fixed;
+    // right: 0;
+    width: 100%;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+h1#logo {
+    // font-family: 'Inter', sans-serif;
+    font-family: 'Metal Mania', cursive;
+    font-weight: bolder;
+    // color: white;
+    margin-left: 4vw;
+    color: white;
+}
+
+span {
+    color: rgb(250, 0, 0);
+    font-weight: bold;
+}
+
+.logo {
+    @include Flex_row();
+
+    .back {
+        font-size: 0.7rem;
+    }
+    .navButton{
+        transition: all .4s; 
+        display: inherit;
+    //    &:hover{
+    //     scale: 1.3;
+    //     rotate: 495deg;
+    //    }
+    }
+}
+
+.verticle_line {
+    border-left: 3px solid #06f8f4;
+    height: 80%;
+    margin: 0 2vw;
+
+}
+
+.line {
+    display: inline-block;
+    width: 6vh;
+    height: 2px;
+    background: #f91858;
+    margin-right: 5px;
+}
+
+/*=================================@@@@@@@@@@@@@@@@@@ MIDDLE AND RIGHT PART @@@@@@@@@@@@@@@@@@==================================*/
+nav {
+    width: 59%;
+    @include Flex_row();
+    justify-content: space-between;
+    padding-right: 3vw;
+
+    .input {
+        @include Flex_row();
+        width: 42%;
+        padding: 1rem 0 0 0;
+        place-items: center;
+        background-color: transparent;
+        transition: border .2s ease-in;
+
+        &:hover {
+            border-bottom: 2px solid wheat;
+        }
+
+        .text {
+            margin: 0 0.5rem;
+            color: white;
+
+            input {
+                // width: 9vw;
+                text-align: end;
+                font-size: 0.9rem;
+                outline: none;
+                background: transparent;
+                border: none;
+                color: white;
+            }
+        }
+
+        .icon {
+            color: white;
+        }
+
+    }
+
+    .butoon-noti {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 18%;
+        font-size: 1.2rem;
+        color: white;
+
+        button {
+            width: 7vw;
+            height: 2vw;
+            border-radius: 20px;
+            // background: #302f2f;
+            background: #544f4f;
+            color: white;
+            transition: all 0.4s;
+
+            &:hover {
+                background: #f91858;
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+
+
+}
+
+
+
+/*=================================@@@@@@@@@@@@@@@@@@ NAV BAR @@@@@@@@@@@@@@@@@@==================================*/
+
+
+
+// ---------------- background ---------------------
+header {
+    // background: url(/Assets/PicBox/moon-knight.jpg) no-repeat;
+    background: url(/Assets/PicBox/Cool-SAO-Wallpaper-HD.jpg) no-repeat;
+    background-size: cover;
+    min-height: 50vw;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+    // #black_screen {
+    //     background: rgba(0, 0, 0, 0.09) no-repeat;
+    //     background-size: cover;
+    //     min-height: 50vw;
+    // }  
+
+    .play_icon {
+        position: relative;
+        left: 38rem;
+        width: 5vw;
+        aspect-ratio: 1;
+        top: 20vw;
+        border-radius: 50%;
+        background: #b0eeeb;
+        // height: 7vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: #06faee;
+
+            i {
+                color: black;
+
+                &::before {
+                    background: #e5e6e6c2;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        i {
+            font-size: 2rem;
+            transition: all 0.4s;
+            color: #f70c5a;
+
+        }
+    }
+}
+
+/*=================================@@@@@@@@@@@@@@@@@@ POP-PUP bOX @@@@@@@@@@@@@@@@@@==================================*/
+.scroll-up {
+    padding: 0.79rem;
+    background: #34323D;
+    position: fixed;
+    bottom: -5rem;
+    right: 2rem;
+    border-radius: 5px;
+    color: wheat;
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+
+    &:hover {
+        background: black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+
+/*=================================@@@@@@@@@@@@@@@@@@ HERO SECTOR @@@@@@@@@@@@@@@@@@==================================*/
+
+
+main {
+    width: 100%;
+    background: transparent;
+    height: 75vw;
+
+    // =================================================[ FLOAT CONTAINER ] =======================================================
+    .float-container {
+        background: transparent;
+        backdrop-filter: blur(20px);
+        width: 70%;
+        height: auto;
+        position: absolute;
+        left: 16%;
+        top: 68%;
+        // position:relative; top:-15vw;
+        @include Flex_column();
+        padding: 0 1rem;
+
+
+        // ----------- 1st BOX -----
+        .box1_1 {
+            @include Flex_row();
+            justify-content: space-between;
+            color: white;
+            padding: 1rem 0;
+
+            .name {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.2vw;
+            }
+
+            .leftside {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 37%;
+
+                .b1 {
+                    border: 1px solid #808080;
+                    border-radius: 5px;
+                    padding: 0.25rem 0.5rem;
+                    font-size: 0.66em;
+                    width: 7vw;
+                    text-align: center;
+                    font-family: 'Open Sans', sans-serif;
+
+                    &:hover {
+                        background: #808080;
+
+                    }
+                }
+            }
+        }
+
+        // ----------- 2nd BOX -----
+        .box1_2 {
+            width: 100%;
+            height: auto;
+            color: wheat;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1.5rem 0;
+
+            // -----=-=-=-=-= LOgo Imgage portion -----=-=-=-=-= 
+            .leftcol {
+                @include Flex_column();
+                width: 73%;
+                padding-right: 1vw;
+                padding-top: 1.2vw;
+                gap: 1.5vw;
+
+                // justify-content: space-evenly;
+                .row1img {
+                    width: 100%;
+                    height: 17vw;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill
+                    }
+
+                }
+
+                .row1but {
+                    @include Flex_column();
+                    align-items: center;
+                    gap: 0.5vw;
+                    color: white;
+
+                    .but {
+                        text-align: center;
+                        // padding: 0.2rem 1rem;
+                        width: 100%;
+                        background: #282637;
+                        border-radius: 5px;
+                        padding: 0.36rem 0;
+                        font-size: 0.62rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all .3s;
+
+                        &:hover {
+                            background: #323d5d;
+                            color: #f8f4f4;
+
+                            box-shadow: 0 0 3px 0 white;
+                        }
+                    }
+                }
+
+                .comment {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    border-radius: 5px;
+                    background: #2b2834;
+                    padding: 1rem;
+                    font-size: 0.8rem;
+                    margin-top: 0.9vw;
+
+                    &:hover {
+                        background: #0a090e;
+                        font-size: 0.85rem
+                    }
+                }
+            }
+
+            .rightcol {
+                @include Flex_column();
+                gap: 1vw;
+
+
+                .row2_1 {
+                    display: flex;
+
+
+                    .col2_1 {
+                        @include Flex_column();
+                        padding: 0 1rem;
+                        width: 75%;
+
+                        // -=-=--=-= name =--=-=-=-=-
+                        .box1 {
+                            @include Flex_column();
+                            align-items: first baseline;
+                            padding: 0.5rem 0;
+                            color: white;
+
+                            h3 {
+                                font-family: 'Montserrat', sans-serif;
+                                display: flex;
+                                width: 50%;
+                                justify-content: space-between;
+                                font-weight: 300;
+
+                                p {
+                                    font-size: .5rem;
+                                    border: 1px solid;
+                                    border-radius: 5px;
+                                    padding: 0rem 0.6rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            p {
+                                font-size: 0.9vw;
+                                font-family: 'poppins';
+                                font-weight: 900;
+                            }
+                        }
+
+                        // =--=-=-=-=-=-=-=-- Reating _---=-=-=-
+                        .box2 {
+                            @include Flex_row();
+                            width: 100%;
+                            justify-content: space-between;
+                            padding: 0.8rem 0;
+
+                            .div {
+                                display: flex;
+                                justify-content: space-between;
+                                color: white;
+
+                                p {
+                                    display: flex;
+                                    font-size: 0.7rem;
+                                    padding-right: 0.5rem;
+
+                                    span {
+                                        margin: 0 0.2rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        // -=--=--=---= DETAILS --=-=-=-=--
+                        .box3 {
+                            display: flex;
+                            padding: 0.5vw 0;
+                            gap: 1vw;
+                            padding: 0.5rem 0;
+
+                            .rowboc {
+                                @include Flex_column();
+                                gap: 1.5vw;
+
+                                .head {
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 400;
+                                }
+
+                                .underinfo {
+                                    @include Flex_column();
+                                    gap: 0.2vw;
+
+                                    .people {
+                                        display: flex;
+                                        align-items: center;
+                                    }
+
+                                    .people,
+                                    p {
+                                        display: flex;
+                                        font-size: 0.8rem;
+                                        color: #808080;
+
+
+                                        span {
+                                            color: rgb(246, 246, 246);
+                                        }
+
+                                        .profile {
+                                            border-radius: 50%;
+                                            width: 2vw;
+                                            aspect-ratio: 1;
+                                            overflow: hidden;
+                                            display: inline-block;
+
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .detail {
+                                .underinfo {
+                                    gap: 0.5vw;
+                                }
+
+                            }
+
+                            .cast {
+                                .underinfo {
+                                    color: white;
+
+                                    .people {
+                                        color: white;
+                                        gap: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .col2_2 {
+                        @include Flex_column();
+                        padding-left: 1rem;
+                        width: 30%;
+
+                        h2 {
+                            padding: 0.5rem 0;
+                        }
+
+
+                        .trailr {
+                            width: 100%;
+                            // height: 7vw;
+                            height: 47%;
+                            // background: #f91858;
+                            padding: 0.5rem 0;
+
+                            #myVideo {
+                                display: none;
+                                opacity: 0;
+                                position: absolute;
+                                top: 14%;
+                                width: 19%;
+                                height: 9%;
+                                transition: all .5s ease-in-out;
+                                scale: 0.8;
+                                box-shadow: 1px 11px 9px 3px #000214;
+                            }
+
+                            &:hover {
+                                #myVideo {
+                                    display: block;
+                                    z-index: 2;
+                                    scale: 1.3;
+                                    top: 10%;
+                                    opacity: 0.9;
+                                    border-radius: 10px;
+
+                                }
+                            }
+
+                            i {
+                                position: absolute;
+                                right: 10.6%;
+                                top: 18%;
+                                color: white;
+                                font-size: 1.5rem;
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 4px;
+                            }
+                        }
+
+                        .cutimg {
+                            @include Flex_row();
+                            justify-content: space-between;
+                            width: 100%;
+                            // height: 15%;
+
+                            .cut {
+                                width: 30%;
+                                height: 3.5vw;
+                                background: #06f8f4;
+                                display: flex;
+                                justify-content: center;
+
+                                &:hover {
+                                    box-shadow: 0px 0px 6px 3px white;
+
+                                    i {
+                                        scale: 1.1;
+                                    }
+                                }
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+
+                                i {
+                                    place-self: center;
+                                    color: black;
+                                }
+                            }
+                        }
+
+                        .soundtrack {
+                            width: 100%;
+                            height: 35%;
+                            text-align: center;
+                            background: #302f2f;
+                            color: white;
+                            margin-top: 1rem;
+                            font-size: 0.7vw;
+                            @include Flex_row();
+                            justify-content: center;
+                            border-radius: 2px;
+                            transition: all 0.4s;
+
+                            &:hover {
+                                font-size: 1.2vw;
+                            }
+                        }
+                    }
+                }
+
+                // STORY LINE
+                .row2_2 {
+                    @include Flex_column();
+                    gap: 1vw;
+                    padding: 0 1vw;
+
+                    h3 {
+                        font-size: 1.4rem;
+                        font-family: 'Montserrat';
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 24%;
+
+                        .line {
+                            background: wheat;
+                        }
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        color: #aaa;
+                        font-family: 'ArtelyInksPersonal';
+                    }
+                }
+            }
+
+        }
+
+        // ----------- 3rd BOX -----
+        .box1_3 {
+            width: 100%;
+            height: auto;
+            @include Flex_column();
+            align-items: baseline;
+            color: white;
+            overflow: hidden;
+            padding: 1vw 0;
+
+            h2 {
+                font-size: 1.5vw;
+                font-family: 'Montserrat';
+                color: wheat;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 15%;
+            }
+
+            .ep_contain {
+                @include Flex_row();
+                justify-content: space-evenly;
+                padding: 0 2vw;
+                display: -webkit-box;
+                overflow-x: scroll;
+                position: relative;
+                scrollbar-width: none;
+
+                .ep_items {
+                    @include Flex_row();
+                    justify-content: center;
+                    font-family: 'Audiowide', cursive;
+                    background: #302f2f;
+                    width: 8%;
+                    padding: 0.2rem 0.5rem;
+                    margin: 1vw;
+                    border-radius: 2px;
+
+                    &:hover {
+                        background: #aaa;
+                        color: #2b2834;
+
+                        .verticle_line {
+                            border-color: #2b2834;
+                        }
+
+                    }
+
+                    .verticle_line {
+                        margin: 0 0.5rem;
+                        border: 1.4px solid #808080;
+                        height: 17px;
+                    }
+
+                }
+            }
+        }
+
+        // ----------- 4th BOX -----
+        .box1_4 {
+            width: 100%;
+            @include Flex_row();
+            justify-content: space-between;
+            color: white;
+            padding: 1vw 0;
+
+            .left_heading {
+                display: flex;
+                width: 18%;
+                justify-content: space-between;
+                font-size: 1.35vw;
+                font-weight: bold;
+                font-family: 'Montserrat';
+            }
+
+            .rightbox {
+                font-size: 0.7rem;
+                width: 13%;
+                @include Flex_row();
+                justify-content: space-evenly;
+            }
+
+        }
+
+        // ---------- 5th BOX ---------
+        i.card_paly-icon {
+            visibility: hidden;
+            position: relative;
+            left: 7.4rem;
+            font-size: 3rem;
+            bottom: 0rem;
+            transition: all 0.4s;
+            color: #2addf0;
+
+        }
+
+        .box1_5 {
+            width: 100%;
+            height: auto;
+            padding: 1vw 0;
+            @include Flex_column();
+
+            .items-card {
+                color: white;
+                @include Flex_row();
+                justify-content: space-between;
+
+                .sllide-card {
+                    width: 19%;
+
+                    &:hover {
+                        .card__img {
+                            background: #0d0d0d5c;
+
+                            img {
+                                position: relative;
+                                z-index: -1;
+                                height: 99.5%;
+                                width: 99.5%
+                            }
+
+                            i.card_paly-icon {
+                                visibility: visible;
+                                bottom: 4.5rem;
+                            }
+                        }
+
+                    }
+
+                    .card__img {
+                        height: 18vw;
+                        border-radius: 10px;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+
+                        }
+
+                        //                     i.card_play-icon {
+                        //                         visibility: hidden;
+                        // position: relative;
+                        // left: 7.4rem;
+                        // font-size: 3rem;
+                        // bottom: 0rem;
+                        // transition: all 0.4s;
+                        // color: #2addf0;
+                        //                     }
+
+                    }
+
+                    .card__info {
+                        @include Flex_column();
+                        margin-top: 1.5vw;
+
+                        .Movies__name {
+                            font-size: 0.8rem;
+                            display: inline;
+                        }
+
+                        div {
+                            margin-top: 0.5vw;
+                            display: flex;
+                            justify-content: space-between;
+
+                            p {
+                                display: inline-block;
+                                font-size: 0.7rem;
+                                color: #827c7c;
+
+                                #like {
+                                    color: #f91858;
+                                }
+
+                                #Rateing {
+                                    color: gold;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .showMore {
+                width: 100%;
+                padding: 0.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #34323D;
+                color: #5d5b5b;
+                margin: 1vw 0;
+                font-size: 0.9rem;
+                border-radius: 5px;
+
+                &:hover {
+                    color: #808080;
+                }
+
+                div {
+                    width: 12%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+// =================================================[ ONES AGAIN]=======================================================
+
+.once__again {
+    // height: 30vw;
+    height: auto;
+    width: 100%;
+    // margin-top: 2vw;
+    color: white;
+    @include Flex_row();
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+    // transition: all 0.2s ease-out;
+
+
+    .down_nav {
+        ul {
+            list-style-type: none;
+            @include Flex_column();
+
+            li {
+                display: inline-block;
+                // padding: 0.5rem 0;
+                cursor: pointer;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 0.9;
+                    transform: scale(1.03);
+                }
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                }
+            }
+        }
+    }
+
+    .column {
+        @include Flex_column();
+        justify-content: center;
+        // align-items: center;
+        // gap: 2vw;
+
+        .logo {
+            width: 5vw;
+            height: 7vw;
+
+            img {
+                // width: 100%;
+                height: 80%;
+            }
+        }
+    }
+
+    .for_extra_hover {
+        @include Flex_column();
+        // gap: 2vw;
+
+        // opacity: 0.5;
+        .name_of_comp {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                opacity: 0.9;
+                transform: scale(1.03);
+
+                i {
+                    background: white;
+                    color: #16151A;
+
+                }
+            }
+
+            i {
+                padding: 0.3vw;
+                border: 1px solid;
+                border-radius: 9px;
+
+            }
+        }
+    }
+
+    .site_info {
+
+        // margin-top: 2vw;
+
+        .top_line {
+            margin-bottom: 0.5vw;
+            font-weight: 900;
+            font-size: 1rem;
+        }
+    }
+
+    .c1 {
+        width: 11%;
+    }
+
+    .c2 {
+        width: 9%;
+    }
+
+    .c3 {
+        width: 22%;
+        font-size: 0.8rem;
+
+        .for_extra_hover {
+            gap: 0.5rem;
+        }
+    }
+
+}
+
+
+// =================================================[ LAST SECTION - FOOTRE] =======================================================
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4vw;
+    color: white;
+    background: #111016;
+    user-select: none;
+
+    .copy_right {
+        display: flex;
+
+        p {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+// =================================================[ VIIDEO PLAYER PANNEL ] =======================================================
+
+.videoPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    // display: flex;
+    display: none;
+    justify-content: center;
+    background: #070707d4;
+
+    #videoInterface {
+        width: 80%;
+        height: 80%;
+        place-self: center;
+        background-color: #000000a6;
+        box-shadow: 0 0 35px 9px #383636;
+        border-radius: 10px;
+    }
+
+    #video_close_btn {
+        position: absolute;
+        margin: 2.2vw;
+        top: 0;
+        color: #d8d1c469;
+        display: inline-block;
+        width: 5vw;
+        height: 4vw;
+        text-align: center;
+        right: 0;
+        font-size: 3rem;
+
+        &:hover {
+            color: #ffffffcd;
+        }
+    }
+}
+
+// ====================================[ Hidden Nav] ========================
+
+#hidden-nav{
+    position: fixed;
+    z-index: 4;
+@include Flex_column();
+justify-content: center;
+padding: 6vw 3vw;
+width: 22.5vw;
+align-items: center;
+top: -60%;
+background: #000000c4;
+transition: all .3s ease-in;
+li{
+    padding: 0.6vw 0;
+    list-style-type: none;
+    transition: all .4s;
+    &:hover{
+        scale: 1.3;
+        color: white;
+        font-weight: 700;
+    }
+    a{
+        text-decoration: none;
+        text-decoration: none;
+        color: #acacac;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+}
+
+.release_nav{
+    top: 0% !important;
+}
+.scale_rotate{
+    scale: 1.3;
+    rotate: 495deg;
+}
